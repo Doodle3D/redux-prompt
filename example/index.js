@@ -1,6 +1,4 @@
 import 'babel-polyfill'
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
 
 import { middleware as promptMiddleware, reducer as promptReducer, initialState as initialPromptState } from '../src/index.js';
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';

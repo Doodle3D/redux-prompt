@@ -108,8 +108,8 @@ class Component extends React.Component {
         onRequestClose={this.onReject}
         autoScrollBodyContent
         actions={[
-          <FlatButton onTouchTap={this.onReject} label={rejectText} />,
-          <RaisedButton onTouchTap={this.onSubmit} label={submitText} primary />
+          <FlatButton onClick={this.onReject} label={rejectText} />,
+          <RaisedButton onClick={this.onSubmit} label={submitText} primary />
         ]}
       >
         <p>{message}</p>

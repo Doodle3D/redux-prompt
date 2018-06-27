@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     const { onOpen } = this.props;
 
-    return <RaisedButton onTouchTap={onOpen} label="Open" primary />;
+    return <RaisedButton onClick={onOpen} label="Open" primary />;
   }
 }
 
